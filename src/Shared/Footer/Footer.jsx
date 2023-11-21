@@ -7,6 +7,8 @@ import telegram from '../../assets/icon/Telegram.png'
 import linkedin from '../../assets/icon/Linkedin.png'
 import be from '../../assets/icon/Behance.png'
 import dribbble from '../../assets/icon/Dribbble.png'
+import { Link } from 'react-router-dom';
+import { FaGlobe, FaLocationArrow, FaMailBulk, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -24,7 +26,7 @@ const Footer = () => {
 
         </div>
 </div>
-      <footer className="footer p-10 bg-[#0E1025] text-base-content">
+      <footer className="footer py-10 bg-[#0E1025] text-base-content">
   <aside>
     <img src={logo} alt="" />
             <p className=' text-[#808088] text-start'>Customer Feedback Analytic like it was <br /> Supposed to be!</p>
@@ -44,23 +46,25 @@ const Footer = () => {
   </aside> 
   <nav>
     <header className="footer-title">Services</header> 
-    <a className="link link-hover">Branding</a>
-    <a className="link link-hover">Design</a>
-    <a className="link link-hover">Marketing</a>
-    <a className="link link-hover">Advertisement</a>
+    <Link to='/' className="link text-[#949498] link-hover">Home</Link>
+    <Link to='/' className="link text-[#949498] link-hover">About Us</Link>
+    <Link to='/' className="link text-[#949498] link-hover">Careers</Link>
+    <Link to='/' className="link text-[#949498] link-hover">Press</Link>
+    
   </nav> 
   <nav>
     <header className="footer-title">Company</header> 
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Jobs</a>
-    <a className="link link-hover">Press kit</a>
+   <Link to='/' className="link text-[#949498] link-hover">UI/UX Desigin</Link>
+    <Link to='/' className="link text-[#949498] link-hover">E-comers</Link>
+    <Link to='/' className="link text-[#949498] link-hover">Marketing</Link>
+    <Link to='/' className="link text-[#949498] link-hover">Free delivery </Link>
   </nav> 
   <nav>
     <header className="footer-title">Legal</header> 
-    <a className="link link-hover">Terms of use</a>
-    <a className="link link-hover">Privacy policy</a>
-    <a className="link link-hover">Cookie policy</a>
+     <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaMailBulk /> alexgoat@gmai.com</Link>
+    <Link to='/' className="link text-[#949498] link-hover flex items-center gap-2"><FaPhone /> +880 16096-55707</Link>
+    <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaLocationArrow /> 221b Baker St London</Link>
+    <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaGlobe />WebWhiz.com </Link>
   </nav>
       </footer>
      
