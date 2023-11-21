@@ -3,11 +3,22 @@ import  {services}  from '../../../public/services.data';
 import ServiceCard from './ServiceCard';
 import './services.css'
 import Container from '../../Shared/Container/Container';
+import Title from '../../Shared/Title/Title';
+import RightTitle from '../../Shared/RightTitle/RightTitle';
 
 const Services = () => {
   
   return (
     <div className=' bg-img'>
+       <div className=' py-20' >
+      <div className=' flex justify-between items-center'>
+        <div className='w-1/2'>
+          <Title title='Services'/>
+        </div>
+        <div className='w-1/2 '>
+          <RightTitle text="In our portfolio section, you'll embark on a visual journey through a meticulously curated gallery that represents the epitome of digital excellence and creative ingenuity." />
+        </div>
+      </div>
       <Container>
          <div className=' grid grid-cols-1 md:grid-cols-2 gap-8 '>
       {
@@ -16,6 +27,7 @@ const Services = () => {
     </div>
      </Container>
     </div>
+   </div>
   );
 };
 
