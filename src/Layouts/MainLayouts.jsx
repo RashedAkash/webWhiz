@@ -1,12 +1,17 @@
 import React from 'react';
 import Navbar from '../Shared/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
+import Footer from '../Shared/Footer/Footer';
 
 const MainLayouts = () => {
   return (
-    <div className=' max-w-[1140px] mx-auto overflow-hidden'>
+    <div>
+      <div className=' max-w-[1140px] mx-auto overflow-hidden'>
       <Navbar />
       <Outlet />
+      
+    </div>
+    <Footer />
     </div>
   );
 };
