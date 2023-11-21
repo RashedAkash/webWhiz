@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { NavLink } from "react-router-dom";
 import RoudedBtn from '../RoudedBtn/RoudedBtn';
 import logo from '../../assets/logo.png'
+import Container from '../Container/Container';
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
   return (
     <div>
-      <header className="p-4  dark:text-gray-100">
+			<Container>
+				 <header className="p-4  dark:text-gray-100">
 	<div className="container flex justify-between h-16 mx-auto">
 		<NavLink rel="noopener noreferrer" to="/" aria-label="Back to homepage" className="flex items-center p-2">
 			<img src={logo} alt="" />
@@ -70,6 +72,7 @@ const Navbar = () => {
 					
 	</div>
 </header>
+		 </Container>
     </div>
   );
 };

@@ -77,7 +77,7 @@ const Footer = () => {
      
       <footer className="footer border-t border-[#64656D] footer-center p-4 bg-[#0E1025] text-base-content">
   <aside>
-    <p className=' text-[14px] text-[#64656D]'>Copyright 2023 Elearner,Inc NewYork</p>
+    <p className=' text-[14px] text-[#64656D] flex items-center '> <span className=' text-[18px]'>©</span> Copyright 2023 Elearner,Inc NewYork</p>
   </aside>
 </footer>
     </div>
