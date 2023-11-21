@@ -9,11 +9,12 @@ import be from '../../assets/icon/Behance.png'
 import dribbble from '../../assets/icon/Dribbble.png'
 import { Link } from 'react-router-dom';
 import { FaGlobe, FaLocationArrow, FaMailBulk, FaPhone } from "react-icons/fa";
+import FooterTitle from '../FooterTitle/FooterTitle';
 
 const Footer = () => {
   return (
     <div>
-       <div className='bg-[#0E1025] px-20 pt-7  '>
+       <div className='bg-[#0E1025] px-5 lg:px-20 pt-7  '>
       <div className=' flex justify-between'>
         <div className=' text-start'>
           <Title title='join us' />
@@ -45,7 +46,9 @@ const Footer = () => {
            </div>
   </aside> 
   <nav>
-    <header className="footer-title">Services</header> 
+    <header >
+<FooterTitle title='Company'/>
+            </header> 
     <Link to='/' className="link text-[#949498] link-hover">Home</Link>
     <Link to='/' className="link text-[#949498] link-hover">About Us</Link>
     <Link to='/' className="link text-[#949498] link-hover">Careers</Link>
@@ -53,14 +56,18 @@ const Footer = () => {
     
   </nav> 
   <nav>
-    <header className="footer-title">Company</header> 
+    <header >
+<FooterTitle title='Our services'/>
+            </header> 
    <Link to='/' className="link text-[#949498] link-hover">UI/UX Desigin</Link>
     <Link to='/' className="link text-[#949498] link-hover">E-comers</Link>
     <Link to='/' className="link text-[#949498] link-hover">Marketing</Link>
     <Link to='/' className="link text-[#949498] link-hover">Free delivery </Link>
   </nav> 
   <nav>
-    <header className="footer-title">Legal</header> 
+            <header >
+<FooterTitle title='Contact'/>
+            </header> 
      <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaMailBulk /> alexgoat@gmai.com</Link>
     <Link to='/' className="link text-[#949498] link-hover flex items-center gap-2"><FaPhone /> +880 16096-55707</Link>
     <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaLocationArrow /> 221b Baker St London</Link>

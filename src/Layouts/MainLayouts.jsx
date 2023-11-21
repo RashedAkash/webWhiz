@@ -11,7 +11,9 @@ const MainLayouts = () => {
       <Outlet />
       
     </div>
-    <Footer />
+      <div className='  '>
+        <Footer />
+    </div>
     </div>
   );
 };
