@@ -17,7 +17,7 @@ const Banner = () => {
     <div>
       <div className="  ">
         <Container>
-          <div className=" py-10  flex-col gap-7 md:flex md:flex-row-reverse justify-between">
+          <div className=" py-10  flex-col gap-7 md:flex md:flex-row-reverse justify-between items-center">
           <div className='banner-bg relative   md:w-1/2'>
               <img className='md:pl-24 ' src={bannerImg} />
               <img className=' absolute -top-8 right-20 -z-10 ' src={roundImg} alt="" />
