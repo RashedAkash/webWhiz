@@ -3,14 +3,21 @@ import bannerImg from '../../assets/images/banner/banner.png'
 import RightTitle from '../../Shared/RightTitle/RightTitle';
 import RoudedBtn from '../../Shared/RoudedBtn/RoudedBtn';
 import MiddleTitle from '../../Shared/MiddleTitle/MiddleTitle';
+import Container from '../../Shared/Container/Container';
+import './banner.css'
+import roundImg from '../../assets/images/banner/round.png';
+import ellips from '../../assets/images/banner/Ellipse 2.png'
 
 const Banner = () => {
   return (
     <div>
-      <div className="hero  ">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className=' md:w-1/2'>
-              <img src={bannerImg} className="max-w-sm rounded-lg shadow-2xl" />
+      <div className="  ">
+        <Container>
+          <div className=" py-10  flex-col gap-7 md:flex md:flex-row-reverse justify-between">
+          <div className='banner-bg relative   md:w-1/2'>
+              <img src={bannerImg} />
+              <img className=' absolute -top-8 right-40 ' src={roundImg} alt="" />
+              <img src={ellips} className=' absolute left-0 right-0 mx-auto -bottom-3 ' alt="" />
   </div>
     <div className=' md:w-1/2'>
             <div className='text-start'>
@@ -23,6 +30,7 @@ const Banner = () => {
       </div>
     </div>
   </div>
+  </Container>
 </div>
     </div>
   );
