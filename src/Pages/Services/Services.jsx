@@ -5,17 +5,19 @@ import './services.css'
 import Container from '../../Shared/Container/Container';
 import Title from '../../Shared/Title/Title';
 import RightTitle from '../../Shared/RightTitle/RightTitle';
+import MiddleTitle from '../../Shared/MiddleTitle/MiddleTitle';
 
 const Services = () => {
   
   return (
     <div className=' bg-img'>
        <div className=' py-20' >
-      <div className=' flex justify-between items-center'>
-        <div className='w-1/2'>
-          <Title title='Services'/>
+      <div className=' mb-[40px] md:flex justify-between items-center'>
+        <div className='md:w-1/2 text-start'>
+            <Title title='Services' />
+            <MiddleTitle first='Our' second='satisfied customers ' third='share their stories' />
         </div>
-        <div className='w-1/2 '>
+        <div className='md:w-1/2 '>
           <RightTitle text="In our portfolio section, you'll embark on a visual journey through a meticulously curated gallery that represents the epitome of digital excellence and creative ingenuity." />
         </div>
       </div>
