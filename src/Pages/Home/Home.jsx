@@ -6,6 +6,7 @@ import About from '../About/About';
 import Portfolio from '../Portfolio/Portfolio';
 import Blog from '../Blog/Blog';
 import Skills from './Skills/Skills';
+import Information from './Information/Information';
 
 const Home = () => {
   return (
@@ -15,7 +16,9 @@ const Home = () => {
       <About />
       <Services />
       <Contact />
+      
       <Blog />
+      <Information />
       <Skills />
     </div>
   );
