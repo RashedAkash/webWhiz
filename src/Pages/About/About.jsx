@@ -16,7 +16,7 @@ const About = () => {
         <LastTitle first='I am JavaScript ' second='Developer'/>
       </div>
       <div className='md:w-1/2'>
-        <RightTitle text="Hello! I am Rashed Hossain a passionate web developer who loves creating captivating experiences on the internet. My journey into web development began in 2023.I believe in the power of the web to connect people and create meaningful interactions. With a keen eye for detail and a commitment to user-centric design, I strive to deliver exceptional web solutions that leave a lasting impact. Lets collaborate and turn your ideas into remarkable digital experiences!" />
+        <RightTitle text="Hello! I am Rashed Hossain. a passionate web developer who loves creating captivating experiences on the internet. My journey into web development began in 2023.I believe in the power of the web to connect people and create meaningful interactions. With a keen eye for detail and a commitment to user-centric design, I strive to deliver exceptional web solutions that leave a lasting impact. Lets collaborate and turn your ideas into remarkable digital experiences!" />
       </div>
       </div>
       <Container>

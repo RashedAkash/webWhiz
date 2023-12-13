@@ -15,10 +15,10 @@ const Services = () => {
       <div className=' mb-[40px] md:flex justify-between items-center'>
         <div className='md:w-1/2 text-start'>
             <Title title='Services' />
-            <MiddleTitle first='Our' second='satisfied customers ' third='share their stories' />
+            <MiddleTitle first='Where  ' second='Creativity ' third='Meets Functionality' />
         </div>
         <div className='md:w-1/2 '>
-          <RightTitle text="In our portfolio section, you'll embark on a visual journey through a meticulously curated gallery that represents the epitome of digital excellence and creative ingenuity." />
+          <RightTitle text="Highly motivated and very passionate JavaScript Developer with one years of experience in React js, Next js, Firebase, Tailwind CSS, Material UI, Node js, Express js, MongoDB" />
         </div>
       </div>
       <Container>
