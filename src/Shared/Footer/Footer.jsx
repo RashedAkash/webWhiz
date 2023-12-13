@@ -29,7 +29,7 @@ const Footer = () => {
 </div>
       <footer className="footer py-10 bg-[#0E1025] text-base-content">
   <aside>
-    <img src={logo} alt="" />
+   
             <p className=' text-[#808088] text-start'>Customer Feedback Analytic like it was <br /> Supposed to be!</p>
             <h2 className=' relative text-white mt-4'>
               Social Links
@@ -68,16 +68,17 @@ const Footer = () => {
             <header >
 <FooterTitle title='Contact'/>
             </header> 
-     <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaMailBulk /> alexgoat@gmai.com</Link>
-    <Link to='/' className="link text-[#949498] link-hover flex items-center gap-2"><FaPhone /> +880 16096-55707</Link>
-    <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaLocationArrow /> 221b Baker St London</Link>
-    <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaGlobe />WebWhiz.com </Link>
+     <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaMailBulk /> rashedhossain416400@gmail.com</Link>
+    <Link to='/' className="link text-[#949498] link-hover flex items-center gap-2"><FaPhone /> (+880) 1521-787-495</Link>
+    <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaLocationArrow /> Satkhira,Khulna, Bangladesh</Link>
+    <Link to='/' className="link flex items-center gap-2 text-[#949498] link-hover"><FaGlobe />Rashed Hossain.com </Link>
   </nav>
       </footer>
      
       <footer className="footer border-t border-[#64656D] footer-center p-4 bg-[#0E1025] text-base-content">
   <aside>
-    <p className=' text-[14px] text-[#64656D] flex items-center '> <span className=' text-[18px]'>©</span> Copyright 2023 Elearner,Inc NewYork</p>
+    <p className=' text-[14px] text-[#64656D] flex items-center '> <span className=' text-[18px]'>©</span> Copyright 2023 © Built & Designed by. Md.Rashed Hossain
+</p>
   </aside>
 </footer>
     </div>

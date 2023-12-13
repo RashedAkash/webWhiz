@@ -1,9 +1,10 @@
 import React from 'react';
+import Blog from '../Blog/Blog';
 
 const Testimonials = () => {
   return (
     <div>
-      Testimonials
+     <Blog />
     </div>
   );
 };

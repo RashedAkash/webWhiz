@@ -3,5 +3,6 @@
 @tailwind utilities;
 
 #sidebar a.active {
-  color: #185AD9;
+  color: white;
+  background: #185AD9;
 }

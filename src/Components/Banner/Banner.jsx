@@ -64,7 +64,7 @@ const Banner = () => {
       <p className="py-6"><RightTitle text="Welcome to my digital playground, where creativity knows no bounds. I'm a passionate JavaScript developer on a mission to turn innovative ideas into stunning digital realities."/></p>
             <div className=' flex gap-3'>
               <RoudedBtn text='Hire me' />
-              <button className='btn rounded-full border border-[#5F90F0]'>View Portfolio</button>
+              <button className='btn rounded-full border border-[#5F90F0]'>Download Resume</button>
       </div>
     </div>
   </div>
