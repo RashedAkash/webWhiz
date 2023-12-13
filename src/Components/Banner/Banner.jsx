@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImg from '../../assets/images/banner/banner.png'
+import bannerImg from '../../assets/me.png'
 import RightTitle from '../../Shared/RightTitle/RightTitle';
 import RoudedBtn from '../../Shared/RoudedBtn/RoudedBtn';
 import MiddleTitle from '../../Shared/MiddleTitle/MiddleTitle';
@@ -19,17 +19,17 @@ const Banner = () => {
         <Container>
           <div className=" py-10  flex-col gap-7 md:flex md:flex-row-reverse justify-between items-center">
           <div className='banner-bg relative   md:w-1/2'>
-              <img className='md:pl-24 ' src={bannerImg} />
+              <img className='md:pl-24 w-4/5 ' src={bannerImg} />
               <img className=' absolute -top-8 right-20 -z-10 ' src={roundImg} alt="" />
               <img src={ellips} className=' absolute  right-24  -bottom-0  ' alt="" />
              
               <div className=' flex items-center gap-2 text-left bg-white absolute shadow-xl p-4 rounded-xl top-5 left-0'>
                 <div >
-                  <img src={manager} alt="" />
+                  <img className=' w-[50px] h-[50px] rounded-full' src={bannerImg} alt="" />
                 </div>
                 <div>
-                  <h3 className=' text-[#130929] font-bold'>Albert Flores</h3>
-                  <h3 className=' text-[#64656D] font-medium'>Product Manager</h3>
+                  <h3 className=' text-[#130929] font-bold'>Rashed Hossain</h3>
+                  <h3 className=' text-[#64656D] font-medium'>JavaScript Developer</h3>
                 </div>
               </div>
              
@@ -39,7 +39,7 @@ const Banner = () => {
                 </div>
                 <div>
                   <h3 className=' text-[#130929] font-bold'>Project Done</h3>
-                  <h3 className=' text-[#64656D] font-medium'>4679</h3>
+                  <h3 className=' text-[#64656D] font-medium'>10+</h3>
                 </div>
               </div>
               <div className=' flex items-center gap-2 text-left bg-white absolute shadow-xl p-4 rounded-xl bottom-1/2 right-0'>
@@ -61,7 +61,7 @@ const Banner = () => {
             <div className='text-start'>
               <MiddleTitle first='Turning' second='Imagination' third='into Innovation'/>
       </div>
-      <p className="py-6"><RightTitle text="Welcome to my digital playground, where creativity knows no bounds. I'm a passionate designer and developer on a mission to turn innovative ideas into stunning digital realities."/></p>
+      <p className="py-6"><RightTitle text="Welcome to my digital playground, where creativity knows no bounds. I'm a passionate JavaScript developer on a mission to turn innovative ideas into stunning digital realities."/></p>
             <div className=' flex gap-3'>
               <RoudedBtn text='Hire me' />
               <button className='btn rounded-full border border-[#5F90F0]'>View Portfolio</button>
