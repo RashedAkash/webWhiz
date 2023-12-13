@@ -1,14 +1,15 @@
 import React from 'react';
 import RightTitle from '../../Shared/RightTitle/RightTitle';
-import img from '../../assets/images/contact/contact.png'
+
+import img from '../../assets/contact.jpeg'
 import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
-import { FaClock, FaMailBulk, FaMobile, FaPhone } from "react-icons/fa";
+import { FaClock, FaLocationArrow, FaMailBulk, FaMobile, FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   return (
     <div className='py-16'>
       <div className='md:w-1/3 space-y-2 mb-10'>
-        <SectionTitle title='Contact Us' />
+        <SectionTitle title='Contact me' />
           <RightTitle text='Feel free to reach out to us at any time. We value your  feedback, inquiries, and collaboration.'/>
     </div>
        <div className='md:flex gap-24 items-center justify-between'>
@@ -30,38 +31,34 @@ const Contact = () => {
             <div className=' hidden lg:block absolute bg-white z-10   lg:p-8 lg:pr-16 shadow-xl rounded-2xl   -left-24 space-y-4 top-24'>
               <div className=' gap-2 flex text-[#64656D] items-center'>
                 <FaMailBulk />
-                <p>michael.mitc@example.com</p>
+                <p>rashedhossain416400@gmail.com</p>
               </div>
               <div className=' gap-2 flex text-[#64656D] items-center'>
                 <FaPhone />
-                <p>michael.mitc@example.com</p>
+                <p>(+880)1521-787-495</p>
               </div>
+             
               <div className=' gap-2 flex text-[#64656D] items-center'>
-                <FaMailBulk />
-                <p>michael.mitc@example.com</p>
-              </div>
-              <div className=' gap-2 flex text-[#64656D] items-center'>
-                <FaClock />
-                <p>michael.mitc@example.com</p>
+                <FaLocationArrow />
+                <p>Satkhira,khulna,Bangladesh</p>
               </div>
             </div>
             <div className='block lg:hidden absolute bg-white z-10 p-4   shadow-xl rounded-2xl left-12 mx-auto   space-y-2 top-2/4'>
               <div className=' gap-2 flex text-[#64656D] items-center'>
                 <FaMailBulk />
-                <p>michael.mitc@example.com</p>
+                <p>
+rashedhossain416400@gmail.com
+</p>
               </div>
               <div className=' gap-2 flex text-[#64656D] items-center'>
                 <FaPhone />
-                <p>michael.mitc@example.com</p>
+                <p>(+880)1521-787-495</p>
               </div>
               <div className=' gap-2 flex text-[#64656D] items-center'>
-                <FaMailBulk />
-                <p>michael.mitc@example.com</p>
+                <FaLocationArrow />
+                <p>Satkhira,khulna,Bangladesh</p>
               </div>
-              <div className=' gap-2 flex text-[#64656D] items-center'>
-                <FaClock />
-                <p>michael.mitc@example.com</p>
-              </div>
+             
             </div>
          
           </div>
