@@ -79,7 +79,7 @@ const About = () => {
         </div>
         <div className='md:w-1/2 relative'>
             <img className=' rounded-2xl' src={aboutImg} alt="" />
-            <div className=' absolute lg:-right-10 lg:bottom-0 flex justify-around bg-gradient-to-r from-[#5F90F0] to-[#185AD9] p-8 rounded-2xl'>
+            <div className=' absolute lg:-right-10 lg:-bottom-12 flex justify-around bg-gradient-to-r from-[#5F90F0] to-[#185AD9] p-8 rounded-2xl'>
               <div className=' border-r lg:px-8'>
                 <h2 className=' text-white font-bold text-2xl'>10+</h2>
                 <p className='text-[#FFFFFFCC]'>Project Delivery</p>
