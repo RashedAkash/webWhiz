@@ -7,6 +7,7 @@ import "react-sweet-progress/lib/style.css";
 import aboutImg from '../../assets/team.jpeg'
 import Container from '../../Shared/Container/Container';
 
+
 const About = () => {
   return (
     <div className=' py-16'>
