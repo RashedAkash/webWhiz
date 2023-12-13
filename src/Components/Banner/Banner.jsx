@@ -42,7 +42,7 @@ const Banner = () => {
                   <h3 className=' text-[#64656D] font-medium'>10+</h3>
                 </div>
               </div>
-              <div className=' flex items-center gap-2 text-left bg-white absolute shadow-xl p-4 rounded-xl bottom-1/2 right-0'>
+              <div className='  flex items-center gap-2 text-left bg-white absolute shadow-xl p-4 rounded-xl bottom-1/2 right-0'>
                 <div >
                   <img src={userImg} alt="" />
                 </div>
