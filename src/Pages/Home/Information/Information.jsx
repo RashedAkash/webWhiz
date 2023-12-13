@@ -1,13 +1,18 @@
 import React from 'react';
+import LastTitle from '../../../Shared/LastTitle/LastTitle';
+import MiddleTitle from '../../../Shared/MiddleTitle/MiddleTitle';
 
 const Information = () => {
   return (
     <div>
+      <div className='pt-10 pb-4'>
+        <MiddleTitle first='Many' second='information' third='about me' />
+      </div>
       <section className="">
-    <div className="container px-6 py-12 mx-auto">
+    <div className="container px-6 pb-10 mx-auto">
         <div className="lg:flex lg:items-center lg:-mx-6">
             <div className="lg:w-1/2 lg:mx-6">
-                <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
+                <h1 className="text-2xl text-left font-semibold text-gray-700 capitalize  lg:text-3xl">
                     Contact us for <br/> more info
                 </h1>
 
