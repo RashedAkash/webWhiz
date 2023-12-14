@@ -1,9 +1,10 @@
 
 import { NavLink } from "react-router-dom";
-import RoudedBtn from '../RoudedBtn/RoudedBtn';
+
 
 import Container from '../Container/Container';
 import logo from '../../assets/images/about/name.png'
+import RoudedBtn from "../RoudedBtn/RoudedBtn";
 
 const Navbar = () => {
 	
