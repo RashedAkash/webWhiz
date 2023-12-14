@@ -50,7 +50,8 @@ const Information = () => {
                     <h3 className="text-gray-600 dark:text-blue-600 font-bold text-left text-2xl ">Follow me</h3>
 
                     <div className="flex mt-4 -mx-1.5 ">
-                        <a className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform text-blue-400 " href="https://github.com/RashedAkash">
+                        <a className="mx-1.5 dark:hover:text-blue-400  transition-colors duration-300 transform text-blue-400 " href="https://github.com/RashedAkash
+                        ">
                            <FaGithub className='w-6 h-8' />
                         </a>
 

@@ -1,12 +1,12 @@
-import React from 'react';
+
 import Title from '../../Shared/Title/Title'
 import LastTitle from '../../Shared/LastTitle/LastTitle';
 import RightTitle from '../../Shared/RightTitle/RightTitle';
 import Container from '../../Shared/Container/Container';
-import img1 from '../../assets/portfolio.png'
-import img2 from '../../assets/fitnesspng.png'
-import img3 from '../../assets/eventLab.png'
-import img4 from '../../assets/fruit.png'
+import img1 from '../../assets/portfolio.png';
+import img2 from '../../assets/fitness.png';
+import img3 from '../../assets/eventLab.png';
+import img4 from '../../assets/fruit.png';
 
 const Portfolio = () => {
   return (
