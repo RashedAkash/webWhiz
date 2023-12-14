@@ -50,19 +50,19 @@ const Footer = () => {
 <FooterTitle title='Company'/>
             </header> 
     <Link to='/' className="link text-[#949498] link-hover">Home</Link>
-    <Link to='/' className="link text-[#949498] link-hover">About Us</Link>
-    <Link to='/' className="link text-[#949498] link-hover">Careers</Link>
-    <Link to='/' className="link text-[#949498] link-hover">Press</Link>
+    <Link to='/about' className="link text-[#949498] link-hover">About Us</Link>
+    <Link to='/contact' className="link text-[#949498] link-hover">Contact</Link>
+    <Link to='/portfolio' className="link text-[#949498] link-hover">Portfolio</Link>
     
   </nav> 
   <nav>
     <header >
 <FooterTitle title='Our services'/>
             </header> 
-   <Link to='/' className="link text-[#949498] link-hover">UI/UX Desigin</Link>
-    <Link to='/' className="link text-[#949498] link-hover">E-comers</Link>
-    <Link to='/' className="link text-[#949498] link-hover">Marketing</Link>
-    <Link to='/' className="link text-[#949498] link-hover">Free delivery </Link>
+   <Link to='/' className="link text-[#949498] link-hover">JavaScript</Link>
+    <Link to='/' className="link text-[#949498] link-hover">React js</Link>
+    <Link to='/' className="link text-[#949498] link-hover">Next js</Link>
+    <Link to='/' className="link text-[#949498] link-hover">Tailwind css </Link>
   </nav> 
   <nav>
             <header >

@@ -15,7 +15,7 @@ import arrowImg from '../../assets/icon/arrowblue.png'
 const Banner = () => {
   return (
     <div>
-      <div className="  ">
+      <div className=" py-10 ">
         <Container>
           <div className=" py-10  flex-col gap-7 md:flex md:flex-row-reverse justify-between items-center">
           <div className='banner-bg relative   md:w-1/2'>

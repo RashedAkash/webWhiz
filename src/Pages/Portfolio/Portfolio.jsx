@@ -33,7 +33,7 @@ const Portfolio = () => {
                    <div className="flex items-end overflow-hidden bg-cover rounded-lg h-96" style={{backgroundImage: `url(${img1})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'}} >
-                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800/60 ">
+                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800 ">
                     <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Portfolio</h2>
                     <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400700 ">Next js</p>
                 </div>
@@ -44,7 +44,7 @@ const Portfolio = () => {
                   <div className="flex items-end overflow-hidden bg-cover rounded-lg h-96" style={{backgroundImage: `url(${img2})`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat'}} >
-                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800/60 ">
+                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800 ">
                     <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Fitness gym</h2>
                     <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400700 ">React js</p>
                 </div>
