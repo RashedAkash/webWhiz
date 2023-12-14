@@ -1,11 +1,30 @@
 import React from 'react';
 import RightTitle from '../../Shared/RightTitle/RightTitle';
-
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import img from '../../assets/contact.jpeg'
 import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 import { FaClock, FaLocationArrow, FaMailBulk, FaMobile, FaPhone } from "react-icons/fa";
+import Swal from 'sweetalert2'
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_zv4ir8a', 'template_3r7r9ww', form.current, 'VjgLXv1xV-qLzaGnj')
+      .then((result) => {
+        console.log(result.text);
+        Swal.fire({
+  title: 'Success!',
+  text: 'your email send successfully',
+  icon: 'success',
+  confirmButtonText: 'Congratulation!'
+})
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className='py-16'>
       <div className='md:w-1/3 space-y-2 mb-10'>
@@ -15,7 +34,7 @@ const Contact = () => {
        <div className='md:flex gap-24 items-center justify-between'>
       
       <div className='lg:w-1/2' >
-        <form className='lg:w-2/3 lg:pl-10  space-y-4'>
+        <form ref={form} onSubmit={sendEmail} className='lg:w-2/3 lg:pl-10  space-y-4'>
           <input className=' w-full py-4 px-7  border-gray-300 border-0 border-b text-[#64656D]' type="text" placeholder='Name' />
         <br />
         <input className=' w-full py-4 px-7  border-gray-300 border-0 border-b text-[#64656D]' type="text" placeholder='Email' />
