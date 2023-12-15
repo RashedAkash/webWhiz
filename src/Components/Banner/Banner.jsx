@@ -27,7 +27,7 @@ const Banner = () => {
                 <div >
                   <img className=' w-[50px] h-[50px] rounded-full' src={bannerImg} alt="" />
                 </div>
-                <div>
+                <div className=' hidden md:block'>
                   <h3 className=' text-[#130929] font-bold'>Rashed Hossain</h3>
                   <h3 className=' text-[#64656D] font-medium'>JavaScript Developer</h3>
                 </div>

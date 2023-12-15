@@ -1,5 +1,5 @@
 import React from 'react';
-import  {services}  from '../../../public/services.data';
+import  {services}  from '../../../services.data';
 import ServiceCard from './ServiceCard';
 import './services.css'
 import Container from '../../Shared/Container/Container';

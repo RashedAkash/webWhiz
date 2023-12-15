@@ -26,7 +26,7 @@ const About = () => {
           <div className='flex flex-col'>
             <label className=' text-left text-[#130929] font-semibold '>Node js</label><br />
              <Progress className='w-full'
-              percent={65}
+              percent={45}
               theme={
                 {
                   default: {
@@ -39,7 +39,7 @@ const About = () => {
           <div className='flex flex-col'>
             <label className=' text-left text-[#130929] font-semibold  '>React js</label><br />
              <Progress className='w-full'
-              percent={75}
+              percent={65}
               theme={
                 {
                   default: {
@@ -52,7 +52,7 @@ const About = () => {
           <div className='flex flex-col'>
             <label className=' text-left text-[#130929] font-semibold  '>Next js</label><br />
              <Progress className='w-full'
-              percent={45}
+              percent={35}
               theme={
                 {
                   default: {
@@ -65,7 +65,7 @@ const About = () => {
           <div className='flex flex-col'>
             <label className=' text-left text-[#130929] font-semibold '>JavaScript</label><br />
              <Progress className='w-full'
-              percent={87}
+              percent={57}
               theme={
                 {
                   default: {

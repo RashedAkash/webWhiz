@@ -6,3 +6,6 @@
   color: white;
   background: #185AD9;
 }
+.slick-slide > div{
+margin: 0 30px;
+}
