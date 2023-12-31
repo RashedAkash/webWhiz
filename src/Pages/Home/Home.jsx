@@ -19,8 +19,8 @@ const Home = () => {
       
       <Blog />
       <Portfolio />
-      <Information />
-      <Skills />
+      
+      
     </div>
   );
 };

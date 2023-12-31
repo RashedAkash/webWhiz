@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 
 import Container from '../Container/Container';
-import logo from '../../assets/images/about/name.png'
+import logo from '../../assets/logo.png'
 import RoudedBtn from "../RoudedBtn/RoudedBtn";
 
 const Navbar = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
       </ul>
     </div>
 						<NavLink to='/' className="btn btn-ghost text-xl">
-							<img src={logo} alt="" className='w-[50px]' />
+							<img src={logo} alt="" className='' />
 		</NavLink>
   </div>
   <div className="navbar-center hidden lg:flex">

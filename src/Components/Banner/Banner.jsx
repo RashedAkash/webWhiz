@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerImg from '../../assets/me.png'
+import bannerImg1 from '../../assets/images/banner/banner.png'
 import RightTitle from '../../Shared/RightTitle/RightTitle';
 import RoudedBtn from '../../Shared/RoudedBtn/RoudedBtn';
 import MiddleTitle from '../../Shared/MiddleTitle/MiddleTitle';
@@ -19,13 +20,13 @@ const Banner = () => {
         <Container>
           <div className=" py-10  flex-col gap-7 md:flex md:flex-row-reverse justify-between items-center">
           <div className='banner-bg relative   md:w-1/2'>
-              <img className='md:pl-24 w-4/5 ' src={bannerImg} />
+              <img className='md:pl-24 w-4/5 ' src={bannerImg1} />
               <img className=' absolute -top-8 right-20 -z-10 ' src={roundImg} alt="" />
               <img src={ellips} className=' absolute  right-24  -bottom-0  ' alt="" />
              
               <div className=' flex items-center gap-2 text-left bg-white absolute shadow-xl p-4 rounded-xl top-5 left-0'>
                 <div >
-                  <img className=' w-[50px] h-[50px] rounded-full' src={bannerImg} alt="" />
+                  <img className=' w-[50px] h-[50px] rounded-full' src={manager} alt="" />
                 </div>
                 <div className=' hidden md:block'>
                   <h3 className=' text-[#130929] font-bold'>Rashed Hossain</h3>
@@ -64,7 +65,7 @@ const Banner = () => {
       <p className="py-6"><RightTitle text="Welcome to my digital playground, where creativity knows no bounds. I'm a passionate JavaScript developer on a mission to turn innovative ideas into stunning digital realities."/></p>
             <div className=' flex gap-3'>
               <RoudedBtn text='Hire me' />
-              <button className='btn rounded-full border border-[#5F90F0]'>Download Resume</button>
+              <button className='btn rounded-full border border-[#5F90F0]'>View Portfolio</button>
       </div>
     </div>
   </div>

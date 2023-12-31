@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../Title/Title';
 import star from '../../assets/icon/star.png'
-import logo from '../../assets/logo-white.png'
+import logo1 from '../../assets/logo-white.png'
 import twitter from '../../assets/icon/Twitter.png'
 import telegram from '../../assets/icon/Telegram.png'
 import linkedin from '../../assets/icon/Linkedin.png'
@@ -29,7 +29,7 @@ const Footer = () => {
 </div>
       <footer className="footer py-10 bg-[#0E1025] text-base-content">
   <aside>
-   
+   <img src={logo1} alt="" />
             <p className=' text-[#808088] text-start'>Customer Feedback Analytic like it was <br /> Supposed to be!</p>
             <h2 className=' relative text-white mt-4'>
               Social Links

@@ -18,7 +18,7 @@ const Services = () => {
             <MiddleTitle first='Where  ' second='Creativity ' third='Meets Functionality' />
         </div>
         <div className='md:w-1/2 '>
-          <RightTitle text="Highly motivated and very passionate JavaScript Developer with one years of experience in React js, Next js, Firebase, Tailwind CSS, Material UI, Node js, Express js, MongoDB" />
+          <RightTitle text="In our portfolio section, you'll embark on a visual journey through a meticulously curated gallery that represents the epitome of digital excellence and creative ingenuity." />
         </div>
       </div>
       <Container>
