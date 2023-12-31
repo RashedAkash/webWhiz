@@ -2,14 +2,16 @@ import Slider from "react-slick";
 import blogImg from '../../assets/images/blg.png'
 import backgroundImage from '../../assets/images/blogbg.png'
 
+
 const BlogLeft = () => {
    var settings = {
       dots: true,
-      infinite: false,
+      infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
      initialSlide: 1,
+     
      
       responsive: [
         {

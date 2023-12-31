@@ -58,7 +58,7 @@ const Blog = () => {
           <div className='   md:w-1/2'>
               <div className=' relative '  >
                 <img src={backgroundImage} alt="" />
-                <div className=' md:pl-12 absolute left-0 right-0 mx-auto bottom-24 '>
+                <div className=' md:pl-14 absolute left-0 right-0 mx-auto bottom-24 '>
                    <BlogLeft />
                </div>
           </div>

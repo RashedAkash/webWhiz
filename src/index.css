@@ -9,3 +9,9 @@
 .slick-slide > div{
 margin: 0 30px;
 }
+
+.slick-dots li.slick-active button:before{
+  color: #185AD9 !important;
+  font-size: 1rem !important;
+}
+
