@@ -29,7 +29,7 @@ const Contact = () => {
       });
   };
   return (
-    <div className='py-16'>
+    <div className='py-24 mb-16'>
       <div className='md:w-1/3 space-y-2 mb-10'>
         <SectionTitle title='Contact me' />
           <RightTitle text='Feel free to reach out to us at any time. We value your  feedback, inquiries, and collaboration.'/>

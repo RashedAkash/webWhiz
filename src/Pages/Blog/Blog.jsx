@@ -8,6 +8,8 @@ import RightTitle from '../../Shared/RightTitle/RightTitle';
 import Slider from "react-slick";
 import PrevArrow from '../../Components/PrevArrow';
 import NextArrow from '../../Components/Banner/NextArrow';
+import BlogLeft from './BlogLeft';
+import backgroundImage from '../../assets/images/blogbg.png'
 
 
 const Blog = () => {
@@ -51,23 +53,29 @@ const Blog = () => {
   return (
     <Container>
       <div className=' py-24'>
-         <div className="hero ">
-  <div className="hero-content flex-col gap-10 lg:flex-row">
-          <div className=' md:w-1/2'>
-          
+         <div className=" ">
+  <div className=" flex flex-col  md:flex-row gap-10">
+          <div className='   md:w-1/2'>
+              <div className=' relative '  >
+                <img src={backgroundImage} alt="" />
+                <div className=' md:pl-12 absolute left-0 right-0 mx-auto bottom-24 '>
+                   <BlogLeft />
+               </div>
+          </div>
     </div>
     <div className=' md:w-1/2'>
-            <div className=' text-left'>
-              <Title title='Testimonial' />
+            <div className=' ml-8 text-left'>
+              <Title title='blog' />
             </div>
-            <div className=' text-left'>
-              <MiddleTitle first='Our  ' second='satisfied customers' third='share their stories'/>
+              <div className=' ml-8  text-left'>
+                <h2 className=' text-[#130929] font-bold text-[40px] '>Our <span className=' bg-gradient-to-b from-white to-blue-200 text-blue-400 '>satisfied customers</span> <br /> share their stories </h2>
+             
             </div>
                <div>
        
         <Slider {...settings}>
-          <div>
-           <p className="py-6"><RightTitle text="The team  consistently delivered outstanding results surpassing our expectations in terms of creativity strategy Graphic design is a dynamic and creative field that blends artistry with technology " /></p>
+          <div className=''>
+           <p className="py-6 "><RightTitle text="The team  consistently delivered outstanding results surpassing our expectations in terms of creativity strategy Graphic design is a dynamic and creative field that blends artistry with technology " /></p>
           </div>
           <div>
              <p className="py-6"><RightTitle text="The team  consistently delivered outstanding results surpassing our expectations in terms of creativity strategy Graphic design is a dynamic and creative field that blends artistry with technology " /></p>
