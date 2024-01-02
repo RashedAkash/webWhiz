@@ -13,14 +13,14 @@ const Home = () => {
   return (
     <div>
       <Banner />
-      
+      <Portfolio />
       <About />
       <Services />
       <Reviews />
       <Contact />
       
       <Blog />
-      <Portfolio />
+      
       
       
     </div>

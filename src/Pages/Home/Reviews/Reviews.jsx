@@ -21,7 +21,7 @@ const Reviews = () => {
                 </div>
             </div>
 
-            <div className=" w-full  mt-6 lg:mt-0 lg:w-1/2">
+            <div className=" w-full  mt-20 lg:mt-0 lg:w-1/2">
               <TestimonialSlider />
             </div>
         </div>

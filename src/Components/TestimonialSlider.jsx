@@ -44,7 +44,7 @@ const TestimonialSlider = () => {
   return (
     <div>
        <Slider {...settings}>
-          <div className=" bg-white border border-[#5F90F0] p-6 rounded-xl" >
+          <div className=" bg-white  border border-[#5F90F0] p-6 rounded-xl" >
           <div className=" text-left
            flex justify-between gap-10 ">
             <div className=" text-left ">

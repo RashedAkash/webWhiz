@@ -10,6 +10,11 @@ import img4 from '../../assets/fruit.png';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { data } from '../../../public/Portfolio';
+import { category } from '../../../public/Category';
+import Cat from '../../Components/Cat';
+
+console.log(data);
 
 const Portfolio = () => {
    const settings = {
@@ -64,8 +69,11 @@ const Portfolio = () => {
         <div>
           <section className="">
     <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-blue-400 mb-10">Our
-            Portfolio</h1>
+              <div className='flex mb-12'>
+                 {
+                category?.map((cat,index)=> <Cat key={index} cat={cat} />)
+      }
+             </div>
 
         
                 
