@@ -14,9 +14,27 @@ import { data } from '../../../public/Portfolio';
 import { category } from '../../../public/Category';
 import Cat from '../../Components/Cat';
 
+import { useState } from 'react';
+
 console.log(data);
 
 const Portfolio = () => {
+   const [filteredItems, setFilteredItems] = useState([]);
+   const [selectedCategory, setSelectedCategory] = useState("all");
+  const filterItems = (category) => {
+     const filtered =
+      category === "all"
+        ? data
+        : data?.filter((item) => item.category === category);
+    setFilteredItems(filtered);
+    setSelectedCategory(category);
+  }
+
+   const showAll = () => {
+    setFilteredItems(data);
+    setSelectedCategory("all");
+     
+  };
    const settings = {
       dots: false,
       infinite: true,
@@ -70,10 +88,35 @@ const Portfolio = () => {
           <section className="">
     <div className="container px-6 py-10 mx-auto">
               <div className='flex mb-12'>
-                 {
-                category?.map((cat,index)=> <Cat key={index} cat={cat} />)
-      }
-             </div>
+                <button
+              onClick={showAll}
+              className={selectedCategory === "all" ? "active" : ""}
+            >
+              All
+            </button>
+            <button
+              onClick={() => filterItems("UI/UX Design")}
+              className={selectedCategory === "UI/UX Design" ? "active" : ""}
+            >
+              UI/UX Design
+            </button>
+            <button
+              onClick={() => filterItems("Graphic Design")}
+              className={selectedCategory === "Graphic Design" ? "active" : ""}
+            >
+              Graphic Design
+            </button>
+            <button
+              onClick={() => filterItems("Developments")}
+              className={selectedCategory === "Developments" ? "active" : ""}
+            >
+              Developments
+            </button>
+           
+
+
+               
+              </div>
 
         
                 
@@ -84,54 +127,11 @@ const Portfolio = () => {
 
                
                 <Slider {...settings}>
-          <div>
-           <a href="https://parsonal-portfolio.vercel.app/">
-                   <div className="flex items-end overflow-hidden bg-cover rounded-lg h-96" style={{backgroundImage: `url(${img1})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'}} >
-                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800 ">
-                    <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Portfolio</h2>
-                    <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400700 ">Next js</p>
-                </div>
-            </div>
-           </a>
-          </div>
-          <div>
-            <a href="https://fitness-b1aa9.web.app/">
-                  <div className="flex items-end overflow-hidden bg-cover rounded-lg h-96" style={{backgroundImage: `url(${img2})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'}} >
-                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800 ">
-                    <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Fitness gym</h2>
-                    <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400700 ">React js</p>
-                </div>
-            </div>
-            </a>
-          </div>
-          <div>
-              <a href="https://event-lab-551ad.web.app/">
-                    <div className="flex items-end overflow-hidden bg-cover rounded-lg h-96" style={{backgroundImage: `url(${img3})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'}} >
-                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800 ">
-                    <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Event lab</h2>
-                    <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400700 ">Firebase</p>
-                </div>
-            </div>
-          </a>
-          </div>
-          <div>
-             <a href="https://rashedakash.github.io/fruit-brust/">
-                  <div className="flex items-end overflow-hidden bg-cover rounded-lg h-96"style={{backgroundImage: `url(${img4})`,
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat'}} >
-                <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-blue-800 ">
-                    <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">Fruit brust</h2>
-                    <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400700 ">Tailwind css</p>
-                </div>
-            </div>
-                </a>
-          </div>
+                
+                   {
+                  filteredItems?.map((cat,index)=> <Cat key={index} cat={cat} />)
+         }
+               
           
           
         </Slider>
